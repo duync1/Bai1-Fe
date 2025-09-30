@@ -15,13 +15,23 @@ h4 {
   background-color: black;
 }
 
-a{
+a {
   color: white;
   text-decoration: none;
 }
 
-.more-info a{
+.more-info {
+  display: flex;
+  align-items: center;
+}
+
+.more-info a {
   margin-left: 5px;
+  display: inline-block;
+}
+
+.more-info img {
+  display: inline-block;
 }
 
 .container {
@@ -79,13 +89,13 @@ a{
   margin-bottom: 10px;
 }
 
-.list-item{
+.list-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
 }
 
-.list-item li{
+.list-item li {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -94,19 +104,27 @@ a{
   padding-left: 15px;
 }
 
+.left-top-content .footer-content p{
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px dotted #333;
+}
+
 .dotted-line {
   border: none;
   border-top: 2px dotted #333;
   margin: 15px 0;
 }
 
-.more-info span {
-  color: white;
-}
-
 .left-bottom-content {
   margin-top: 85px;
   padding-left: 15px;
+}
+
+.left-bottom-content .content{
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px dotted #333;
 }
 
 .left-bottom-content .header {
@@ -120,13 +138,11 @@ a{
   padding: 0 20px;
 }
 
-.right-content .right-top-content {
-  height: 70px;
-}
-
-
 .right-content .right-bottom-content {
+  margin-top: 70px;
   padding: 15px;
+  padding-top: 25px;
+  border-top: 1px solid #353439;
 }
 
 .right-content .right-bottom-content .image-wrapper {
@@ -148,3 +164,6 @@ a{
   margin-top: 50px;
 }
 
+.right-content .text-highlight{
+  color: white;
+}
